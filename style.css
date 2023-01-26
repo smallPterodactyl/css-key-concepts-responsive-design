@@ -1,17 +1,34 @@
 :root {
-    --coral: #F05D5E;
+
+  --coral: #F05D5E;
     --teal: #0F7173;
     --light: #E7ECEF;
     --dark: #272932;
     --camel: #D8A47F;
 }
 
+
+
 body {
-    background-color: var(--light);
+    background-color: var(--light); 
+    
+    @media (min-width:700px) {
+        font-size { 1.1 rem }
+    }
+
+    @media (min-width:1000px) {
+        font-size { 1.2 rem }
+    }
+     
+}
+h1,
+h2,
+h3 {
+  font-family: 'DynaPuff', cursive;
 }
 
 h1 {
-    font-size: 2.25rem;
+    font-size: 2.25rem;  
 }
 
 p {
@@ -21,6 +38,7 @@ p {
 .card-container {
    display: flex;
    flex-flow: wrap;
+   justify-content: space-around;
 }
 
 .card {
@@ -31,4 +49,5 @@ p {
 img {
     width: 250px;
 }
+
 
